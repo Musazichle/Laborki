@@ -28,7 +28,7 @@ namespace App1
         {
             MediaElement mediaElement = new MediaElement();
             var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
-            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Zaliczono zadanie");
+            Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("Test syntezatora");
             mediaElement.SetSource(stream, stream.ContentType);
             mediaElement.Play();
             
